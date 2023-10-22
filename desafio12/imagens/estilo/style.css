@@ -48,22 +48,27 @@
 
  }
  section.imagem {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.205);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.432);
+    background-attachment: fixed;
 
  }
  section.imagem >p {
     display: inline-block;
-    background-color: rgb(44, 59, 59);
+    background-color: rgba(44, 59, 59, 0.486);
     padding: 10px;
+;   
  }
  section > p {
     padding-bottom: 2em;
+    
  }
  section#img01{
      background-image: url(../elephant-8253639_1280.jpg);
-     background-position: center center;
+     background-position: right center;
      background-size: cover;
+     
  }
  section#img02{
      background-image: url(../milky-way-8258264_1280.jpg);
