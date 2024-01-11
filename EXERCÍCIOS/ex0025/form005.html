@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de formulário</title>
+    <style>
+        fieldset {
+            background-color: lightgray;
+        }
+        label {
+            background-color: white;
+        }
+        .boton:hover {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+         <fieldset>
+                    <legend>Sexo</legend>
+                                 <label for="ismas"><input type="radio" name="sexo" id="ismas" value="M"> Masculino</label> <br>
+                                 <label for="isfem"><input type="radio" name="sexo" id="isfem" value="F">Feminino</label>
+         </fieldset>
+         
+         <fieldset>
+                   <legend>esportes favoritos </legend>
+                         
+                                 <input type="checkbox" name="surf" id="isurf"> <label for="isurf">Surf</label> <br>
+                                 <input type="checkbox" name="futebol" id="ifutebol"> <label for="ifutebol">Futebol</label> <br>
+                                 <input type="checkbox" name="basquete" id="ibasquete"> <label for="ibasquete">Basquete</label><br>
+                                 <input type="checkbox" name="golfe" id="igolfe"> <label for="igolfe">Golfe</label><br>
+
+         </fieldset>
+
+             <p>
+            <input type="submit" value="enviar" class="boton">
+            <input type="reset" value="limpar" class="boton">
+            </p>
+    </form>
+</body>
+</html>
