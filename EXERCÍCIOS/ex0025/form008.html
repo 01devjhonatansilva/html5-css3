@@ -6,24 +6,25 @@
     <title>exemplo de formulário</title>
 </head>
 <body>
-    <p>
-        <label for="in1">número1:</label>
-        <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <p>
+            <label for="in1">número1:</label>
+            <input type="number" name="n1" id="in1" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">>
         
-    </p>
-    <p>
-        <label for="in2">número 2:</label>
-        <input type="number" name="number" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
-    </p>
-    <p>
-        <label for="isoma">soma:</label>
-        <output name="soma" id="isoma">0</output>
-    </p>
-
-    <p>
-        <input type="submit" value="enviar">
-        <input type="reset" value="limpar">
-    </p>
+        </p>
+        <p>
+            <label for="in2">número 2:</label>
+            <input type="number" name="number" id="in2" min="0" max="50" required oninput="isoma.innerHTML = Number(in1.value) + Number(in2.value)">
+        </p>
+        <p>
+            <label for="isoma">soma:</label>
+            <output name="soma" id="isoma">0</output>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
     
 </body>
 </html>
